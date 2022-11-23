@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>お問い合わせ | わだこ屋【ハンドメイドアクセサリー】</title>
+		<meta name="description" content="わだこ屋">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="images/favicon2.png" href="images/favicon2.png">
+
+  <!-- CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  		<link href="com/style.css" rel="stylesheet">
+		  <link rel="preconnect" href="https://fonts.googleapis.com">
+		  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		  <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
+		  <link rel="preconnect" href="https://fonts.googleapis.com">
+		  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		  <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  <!-- Javascript -->
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="com/making.js"></script>
+		<script async src="https://www.instagram.com/static/bundles/es6/EmbedSDK.js/2fe3a16f6aeb.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+		<script>
+		jQuery(document).ready(function() {
+		var offset = 100;
+		var duration = 500;
+		jQuery(window).scroll(function() {
+		if (jQuery(this).scrollTop() > offset) {
+		jQuery('.pagetop').fadeIn(duration);
+		} else {
+		jQuery('.pagetop').fadeOut(duration);
+		}
+		});
+
+		jQuery('.pagetop').click(function(event) {
+		event.preventDefault();
+		jQuery('html, body').animate({scrollTop: 0}, duration);
+		return false;
+		})
+		});
+		</script>
+
+	</head>
+	
+<body>
+	<div id="loading">
+    <div class="loader"></div>
+</div>
+
+<!-- 上メニュー部分ここから -->
+<!-- <div id="contact" class="big-bg"> -->
+	<header id="top-head">
+    <div class="inner">
+        <div id="mobile-head">
+            <h1 class="logo"><a href="index.html">Wadako's Shop</a></h1>
+            <div id="nav-toggle">
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <nav id="global-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sc03">Item</a></li>
+                <li><a href="index.html#sc02">Profile</a></li>
+                <li><a href="index.html#sc04">Infomation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<!-- 上メニュー部分ここまで -->
+
+<article id="sc01" class="co-scroll01">
+	<div class="co-sc01-text01">
+		<!-- <p class="sc01-title01">タイトル見出しここは見出し</p> -->
+		お問い合わせ
+		<br>-Contact-
+	</div>
+	
+	<div class="scrollbutton">
+		<a class="scrollbt" href="#sc02"><span></span></a>
+	</div>
+	
+</article>
+
+	<div class="page-title">
+	<div class="wrapper">
+		<!-- <h2 class="page-title">Contact</h2> -->
+		<form action="#">
+			<div>
+				<label for="name">お名前</label>
+				<input type="text" id="name" name="your-name " placeholder="名字　名前">
+			</div>
+
+			<div>
+				<label for="email">メールアドレス</label>
+				<input type="email" id="email" name="your-email" placeholder="abc@example.com ">
+			</div>
+
+			<div>
+				<label for="message"placeholder="お問い合わせ内容をご記入ください。">メッセージ</label>
+				<textarea id="message" name="your-message" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+			</div>
+
+			<input type="submit" class="button" value="送信">
+		</form>
+	</div><!-- /.wrapper -->
+</div>
+
+			
+
+
+<!-- フッターここから -->		
+	<footer id="contactfooter">
+		
+		<div class="end-credit">© Wadako's Shop co.,ltd. All rights reserved.</div>
+		
+	</footer>
+			<!-- Javascript -->
+		<script src="./com/scrollreveal.min.js"></script>
+		<script src="./com/making2.js"></script>
+		<div class="pagetop">↑</div>	
+</body>
+	
+</html>
+	
