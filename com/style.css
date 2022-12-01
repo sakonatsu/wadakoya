@@ -76,6 +76,7 @@ a:hover {
 	color: rgb(0, 0, 0);
 	font-size: 15px;
 	margin-top: 70px;
+	text-align: center;
 } 
 .sc01-title01 {
 	font-size: 160%;
@@ -683,33 +684,29 @@ article {
 		width: 100%;
 
 		background-color: #c0d3dc;
-		margin-top: 70px;
+		/* margin-top: 50px;
 		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-bottom: 200px;
 		padding-left: 50px;
 		padding-right: 50px;
-		line-height: 0px;
+
+		line-height: 0px; */
 	}
 	.wrapper {
 		background: white;
 		text-align: center;
-		padding-top: 100px;
-		height: 700px;
+		padding-top: 50px;
+		height: 1000px;
 		width: auto;
 		margin: 0 auto;
 		line-height: 250%;
 
-		/* margin-top: 70px;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 200px; */
 
 	}	
 
 	form div {
 		margin-bottom: 14px;
-		/* width: 500px;
-    	margin: 0 auto; */
+		
 	}
 	label {
 		font-size: 1.125rem;
@@ -819,11 +816,23 @@ article {
 		margin-top: 200px;
 	}
 	/* フォーム */
-	input[type="text"],
+	/* input[type="text"],
 	input[type="email"],
 	textarea {
-		max-width: 100%;
+		max-width: 100%; */
 	}
+	iframe[src^="https://docs.google.com/forms/d/e"]{
+		width:100%;
+	}
+
+.page-title {
+    width: 100%;
+    margin-top: 70px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 0px;
 
 }
 
